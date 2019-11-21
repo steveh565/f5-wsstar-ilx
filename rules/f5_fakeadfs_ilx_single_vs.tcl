@@ -1,4 +1,5 @@
 when RULE_INIT {
+    #Boolean Debug Logging Flag: 1 = On, 0 = Off
     set static::adfsdebug 1
 }
     

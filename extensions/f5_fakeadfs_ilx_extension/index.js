@@ -49,7 +49,7 @@ ilx.addMethod('Generate-WSTrustToken', function(req, res) {
   var rstr_options = {
     cert: SigningCert,
     key: SigningKey,
-    issuer: 'https://fakeadfs.domain.com',
+    issuer: config.federation.issuer,
     lifetimeInSeconds: timeout,
     scope: 'urn:wt-trust:client',
     attributes: {
